@@ -26,5 +26,5 @@ function loadSource(relative) {
 }
 const { CreatorCredit } = loadSource("components/creator-credit.tsx");
 const { creator } = loadSource("config/creator.ts");
-const props = process.argv[2] ? { profile: { ...creator, portfolioUrl: process.argv[2] } } : {};
+const props = process.argv[2] ? { profile: { ...creator, portfolioUrl: process.argv[2] === "--no-portfolio" ? null : process.argv[2] } } : {};
 process.stdout.write(renderToStaticMarkup(createElement(CreatorCredit, props)));

@@ -22,7 +22,7 @@ for (const width of [375, 390, 430, 768, 1024, 1440]) {
       await expect(section.getByText(creator.title, { exact: true })).toBeVisible();
       await expect(section.getByText(creator.availability, { exact: true })).toBeVisible();
       await expect(section.getByText("Independent Concept Project", { exact: true })).toBeVisible();
-      await expect(section.getByRole("link", { name: "View Portfolio" })).toHaveCount(0);
+      await expect(section.getByRole("link", { name: "View Portfolio" })).toHaveAttribute("href", creator.portfolioUrl!);
       const result = await page.locator(geometrySelector).evaluateAll(elements => elements.filter(element => !element.closest(".creator-note")).map(element => {
         const rect = element.getBoundingClientRect();
         const style = getComputedStyle(element);
@@ -104,7 +104,7 @@ test("Start a Project is keyboard accessible and offers both methods without Jav
 
 test("portfolio CTA appears only when a real URL is configured", async ({ page }) => {
   // Render in Node so Playwright's JSX test transform does not replace React elements.
-  await page.setContent(execFileSync(process.execPath, ["tests/render-creator.mjs"], { encoding: "utf8" }));
+  await page.setContent(execFileSync(process.execPath, ["tests/render-creator.mjs", "--no-portfolio"], { encoding: "utf8" }));
   await expect(page.getByRole("link", { name: "View Portfolio" })).toHaveCount(0);
   const portfolioUrl = "https://portfolio.example.com/";
   await page.setContent(execFileSync(process.execPath, ["tests/render-creator.mjs", portfolioUrl], { encoding: "utf8" }));
@@ -112,6 +112,11 @@ test("portfolio CTA appears only when a real URL is configured", async ({ page }
   await expect(portfolio).toHaveAttribute("href", portfolioUrl);
   await expect(portfolio).toHaveAttribute("data-creator-action", "portfolio");
   await expect(portfolio).toHaveAttribute("rel", "noopener noreferrer");
+  await page.setContent(execFileSync(process.execPath, ["tests/render-creator.mjs"], { encoding: "utf8" }));
+  const configuredPortfolio = page.getByRole("link", { name: "View Portfolio" });
+  await expect(configuredPortfolio).toHaveAttribute("href", "https://alson-portfolio-nine.vercel.app/");
+  await expect(configuredPortfolio).toHaveAttribute("target", "_blank");
+  await expect(configuredPortfolio.locator('svg[aria-hidden="true"]')).toHaveCount(1);
 });
 
 test("creator layer passes accessibility checks closed and expanded", async ({ page }) => {
