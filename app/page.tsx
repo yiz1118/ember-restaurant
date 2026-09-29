@@ -1,0 +1,26 @@
+import { Icon } from "@/components/icons";
+import Link from "next/link";
+import Image from "next/image";
+import { Eyebrow, TextLink, BookingInvitation, FeatureImage } from "@/components/shared";
+import { gallery, site } from "@/data/site";
+import { menu } from "@/data/menu";
+
+export default function Home() {
+  return <main id="main">
+    <section className="hero"><Image src="/images/hearth.webp" alt="The glowing open hearth inside EMBER's imagined dining room" fill priority unoptimized sizes="100vw" className="hero-image" /><div className="hero-shade" /><div className="wrap hero-content"><p className="hero-kicker">AN EVENING TO REMEMBER <span>·</span> SINGAPORE CONCEPT</p><h1>Where fire<br /><em>finds flavour.</em></h1><p>{site.line}</p><Link className="button button-cream" href="/reservation">Book a Table <span className="icon-slot" aria-hidden="true"><Icon name="arrow-up-right" /></span></Link></div><span className="hero-side-note">SCROLL TO EXPLORE — 01/07</span></section>
+
+    <section className="intro-section wrap section-pad"><div><Eyebrow>WELCOME TO EMBER</Eyebrow><p className="intro-index">01 — AN INTRODUCTION</p></div><div className="intro-content" data-reveal><h2 className="large-serif">Some evenings are <em>worth slowing down for.</em></h2><p>At EMBER, the hearth sets the pace. Seasonal ingredients meet open flame, familiar flavours find a new edge, and the best part of the night is the time spent around the table.</p><TextLink href="/story">The story behind EMBER</TextLink></div></section>
+
+    <section className="signature-section section-pad" id="signature"><div className="wrap"><div className="section-heading"><div><Eyebrow>ON THE PLATE</Eyebrow><h2 className="section-title">A little smoke.<br /><em>A lot of soul.</em></h2></div><p>Thoughtful ingredients, touched by fire and finished with a light hand.</p></div><div className="signature-grid"><article className="signature-feature" data-reveal><FeatureImage image={gallery[1]} /><div className="signature-caption"><span>01 / THE EARTH</span><div><h3>Fire-roasted mushrooms</h3><p>Fermented cream · Charred leek · Herb oil</p></div></div></article><article className="signature-side" data-reveal><FeatureImage image={gallery[2]} /><div className="signature-caption"><span>02 / THE SEA</span><div><h3>Whole sea bream</h3><p>Brown butter · Grilled lemon · Fennel</p></div></div></article><article className="signature-third" data-reveal><FeatureImage image={gallery[5]} /><div className="signature-caption"><span>03 / THE SEASON</span><div><h3>The evening’s harvest</h3><p>Always changing, never rushed</p></div></div></article></div><div className="section-end"><TextLink href="/menu">Explore the full menu</TextLink></div></div></section>
+
+    <section className="experience-section"><FeatureImage image={gallery[3]} className="experience-image" sizes="100vw" /><div className="experience-overlay"><div className="wrap experience-content"><Eyebrow light>THE ROOM</Eyebrow><h2>Stay for<br /><em>one more glass.</em></h2><p>Soft light, the quiet theatre of the hearth, and a table that feels like yours for the evening.</p><TextLink href="/gallery" light>Step inside</TextLink></div></div></section>
+
+    <section className="menu-preview section-pad wrap"><div className="section-heading"><div><Eyebrow>AN EVENING IN COURSES</Eyebrow><h2 className="section-title">Made for<br /><em>sharing moments.</em></h2></div><p>From the first bite to the last pour, let curiosity lead.</p></div><div className="preview-list">{menu.slice(0,4).map((section, index) => <Link href={`/menu#${section.id}`} key={section.id} className="preview-row"><span>0{index+1}</span><strong>{section.title}</strong><span>{section.note}</span><span className="icon-slot" aria-hidden="true"><Icon name="arrow-up-right" /></span></Link>)}</div><TextLink href="/menu">View the menu</TextLink></section>
+
+    <section className="chef-preview section-pad"><div className="wrap chef-preview-grid"><div className="chef-preview-image"><FeatureImage image={gallery[4]} /></div><div className="chef-preview-copy"><Eyebrow>THE HAND BEHIND THE HEARTH</Eyebrow><h2 className="section-title">Meet Chef<br /><em>Mara Tan.</em></h2><p>“Fire asks you to pay attention. It gives every ingredient a moment to become something more.”</p><p className="concept-aside">Mara Tan is a fictional chef created for this concept project.</p><TextLink href="/chef">Meet the chef</TextLink></div></div></section>
+
+    <section className="seasonal-strip"><div className="wrap seasonal-grid"><div><Eyebrow light>RIGHT NOW AT EMBER</Eyebrow><h2>In season,<br /><em>in its element.</em></h2></div><p>Good cooking begins with what is here. Our sample menu changes with the harvest, the catch, and the ideas that arrive with each new season.</p></div></section>
+    <BookingInvitation />
+    <section className="visit-teaser wrap section-pad"><div><Eyebrow>FIND YOUR WAY</Eyebrow><h2 className="section-title">A place for<br /><em>long evenings.</em></h2><TextLink href="/contact">Plan your visit</TextLink></div><div className="visit-details"><p className="small-label">ILLUSTRATIVE LOCATION</p><p>Singapore<br />Exact address intentionally unspecified</p><p className="small-label">SAMPLE DINNER HOURS</p><p>{site.hours}</p></div></section>
+  </main>;
+}

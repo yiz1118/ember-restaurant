@@ -1,0 +1,1090 @@
+{
+  "changes": [
+    {
+      "key": "375:/",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "375:/",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "375:/menu",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "375:/menu",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/menu",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/menu",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "375:/story",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "375:/story",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/story",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/story",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "375:/chef",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "375:/chef",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/chef",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/chef",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "375:/gallery",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "375:/gallery",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/gallery",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/gallery",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "375:/reservation",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "375:/reservation",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/reservation",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/reservation",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "375:/reservation",
+      "element": "SELECT",
+      "property": "padding",
+      "before": "12px 14px",
+      "after": "12px 40px 12px 14px"
+    },
+    {
+      "key": "375:/contact",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "375:/contact",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/contact",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/contact",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "375:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "375:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "375:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "390:/",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "390:/",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "390:/menu",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "390:/menu",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/menu",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/menu",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "390:/story",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "390:/story",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/story",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/story",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "390:/chef",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "390:/chef",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/chef",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/chef",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "390:/gallery",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "390:/gallery",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/gallery",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/gallery",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "390:/reservation",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "390:/reservation",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/reservation",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/reservation",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "390:/reservation",
+      "element": "SELECT",
+      "property": "padding",
+      "before": "12px 14px",
+      "after": "12px 40px 12px 14px"
+    },
+    {
+      "key": "390:/contact",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "390:/contact",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/contact",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/contact",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "390:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "390:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "390:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "430:/",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "430:/",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "430:/menu",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "430:/menu",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/menu",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/menu",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "430:/story",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "430:/story",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/story",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/story",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "430:/chef",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "430:/chef",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/chef",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/chef",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "430:/gallery",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "430:/gallery",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/gallery",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/gallery",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "430:/reservation",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "430:/reservation",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/reservation",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/reservation",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "430:/reservation",
+      "element": "SELECT",
+      "property": "padding",
+      "before": "12px 14px",
+      "after": "12px 40px 12px 14px"
+    },
+    {
+      "key": "430:/contact",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "430:/contact",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/contact",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/contact",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "430:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "430:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "430:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "768:/",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "768:/",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "768:/menu",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "768:/menu",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/menu",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/menu",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "768:/story",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "768:/story",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/story",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/story",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "768:/chef",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "768:/chef",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/chef",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/chef",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "768:/gallery",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "768:/gallery",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/gallery",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/gallery",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "768:/reservation",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "768:/reservation",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/reservation",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/reservation",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "768:/reservation",
+      "element": "SELECT",
+      "property": "padding",
+      "before": "12px 14px",
+      "after": "12px 40px 12px 14px"
+    },
+    {
+      "key": "768:/contact",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "768:/contact",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/contact",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/contact",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "768:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "y",
+      "before": 42,
+      "after": 41
+    },
+    {
+      "key": "768:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "width",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "height",
+      "before": 42,
+      "after": 44
+    },
+    {
+      "key": "768:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1024:/",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1024:/menu",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1024:/story",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1024:/chef",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1024:/gallery",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1024:/reservation",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1024:/reservation",
+      "element": "SELECT",
+      "property": "padding",
+      "before": "12px 14px",
+      "after": "12px 40px 12px 14px"
+    },
+    {
+      "key": "1024:/contact",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1024:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1440:/",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1440:/menu",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1440:/story",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1440:/chef",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1440:/gallery",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1440:/reservation",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1440:/reservation",
+      "element": "SELECT",
+      "property": "padding",
+      "before": "12px 14px",
+      "after": "12px 40px 12px 14px"
+    },
+    {
+      "key": "1440:/contact",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    },
+    {
+      "key": "1440:/missing-icon-audit-page",
+      "element": "menu-toggle",
+      "property": "margin",
+      "before": "0px",
+      "after": "0px -2px 0px 0px"
+    }
+  ],
+  "intentionalCount": 150,
+  "unexpected": [],
+  "beforeDialog": [
+    {
+      "label": "Close image",
+      "width": 46,
+      "height": 46
+    },
+    {
+      "label": "Previous image",
+      "width": 42,
+      "height": 42
+    },
+    {
+      "label": "Next image",
+      "width": 42,
+      "height": 42
+    }
+  ],
+  "afterDialog": [
+    {
+      "label": "Close image",
+      "width": 46,
+      "height": 46
+    },
+    {
+      "label": "Previous image",
+      "width": 44,
+      "height": 44
+    },
+    {
+      "label": "Next image",
+      "width": 44,
+      "height": 44
+    }
+  ]
+}
