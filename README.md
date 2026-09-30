@@ -22,11 +22,14 @@ npm run build
 npm run test:browser
 npm run test:icons
 npm run test:creator
+npm run test:motion
 ```
 
 The browser test starts the production build on port 3201 and uses installed Google Chrome. Run `npm run build` first. The test checks all seven routes at 375, 390, 430, 768, 1024 and 1440 pixels, interactions, reservation behavior, and automated accessibility. Screenshots are saved in `artifacts/screenshots/`.
 
 The icon matrix uses installed Chrome and Edge, Playwright WebKit, and iPhone/Android browser profiles; see [ICON-CONSISTENCY.md](ICON-CONSISTENCY.md) for scope and device limits.
+
+The motion matrix uses the same five browser profiles and checks the six requested widths, all seven routes, reduced-motion changes, JavaScript-free content, mobile navigation, gallery updates and stable layout. See [MOTION-POLISH.md](MOTION-POLISH.md) for the audit, timing and reusable reveal primitives.
 
 The creator/contact layer is configured in `config/creator.ts`. Its footer credit and contact choices appear on every page. Leave `portfolioUrl: null` until the main portfolio is live, then set its real URL to reveal View Portfolio automatically. See [CREATOR-LAYER.md](CREATOR-LAYER.md) for contact messages, analytics identifiers, changed files and QA commands. The creator matrix uses the same five browser profiles as the icon matrix. Run browser suites sequentially because they share port 3201.
 

@@ -58,11 +58,13 @@ test("touch controls use SVGs and preserve accessible names", async ({ page }) =
   const bounds = await toggle.boundingBox();
   expect(bounds!.width).toBeGreaterThanOrEqual(44);
   expect(bounds!.height).toBeGreaterThanOrEqual(44);
-  await expect(toggle.locator("svg")).toHaveAttribute("data-icon", "menu");
+  await expect(toggle.locator('svg[data-icon="menu"]')).toHaveCSS("opacity", "1");
+  await expect(toggle.locator('svg[data-icon="close"]')).toHaveCSS("opacity", "0");
   await toggle.click();
   const closeMenu = page.getByRole("button", { name: "Close menu" });
   await expect(closeMenu).toHaveAttribute("aria-expanded", "true");
-  await expect(closeMenu.locator("svg")).toHaveAttribute("data-icon", "close");
+  await expect(closeMenu.locator('svg[data-icon="close"]')).toHaveCSS("opacity", "1");
+  await expect(closeMenu.locator('svg[data-icon="menu"]')).toHaveCSS("opacity", "0");
   await expect(page.locator(".nav-book-mobile svg")).toBeVisible();
   await closeMenu.click();
   await expect(toggle).toHaveAttribute("aria-expanded", "false");
@@ -71,6 +73,8 @@ test("touch controls use SVGs and preserve accessible names", async ({ page }) =
   const trigger = page.locator(".gallery-tile").first();
   await trigger.click();
   const dialog = page.getByRole("dialog");
+  // Measure targets after the panel's entrance reaches its resting position.
+  await expect(dialog.locator(".lightbox-panel")).toHaveCSS("transform", "none");
   for (const [label, icon] of [["Close image", "close"], ["Previous image", "arrow-left"], ["Next image", "arrow-right"]]) {
     const control = dialog.getByRole("button", { name: label, exact: true });
     await expect(control.locator("svg")).toHaveAttribute("data-icon", icon);
@@ -136,7 +140,7 @@ test("desktop hover, focus and reduced motion keep icons visible", async ({ page
   expect(focused!.height).toBe(original!.height);
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.reload();
-  await expect(page.locator(".signature-feature")).not.toHaveClass(/will-reveal/);
+  await expect(page.locator(".signature-feature .image-frame")).not.toHaveClass(/will-reveal/);
   await verifyIcons(page);
 });
 

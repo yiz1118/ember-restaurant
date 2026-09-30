@@ -6,6 +6,7 @@ import "@fontsource/manrope/400.css";
 import "@fontsource/manrope/500.css";
 import "@fontsource/manrope/600.css";
 import "./globals.css";
+import "./motion.css";
 import { Header } from "@/components/header";
 import { Footer } from "@/components/shared";
 import { RevealObserver } from "@/components/reveal-observer";

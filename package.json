@@ -10,7 +10,8 @@
     "start": "next start -p 3200",
     "test:browser": "playwright test",
     "test:icons": "playwright test --config=playwright.icons.config.ts",
-    "test:creator": "playwright test --config=playwright.creator.config.ts"
+    "test:creator": "playwright test --config=playwright.creator.config.ts",
+    "test:motion": "playwright test --config=playwright.motion.config.ts"
   },
   "dependencies": {
     "@fontsource/cormorant-garamond": "^5.2.8",

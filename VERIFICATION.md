@@ -1,5 +1,22 @@
 # Verification — 28 September 2026
 
+## Motion polish — 30 September 2026
+
+EMBER now has a brief coordinated entrance, selected editorial heading reveals, slow photograph reveals, short menu staggering, a transitioning mobile menu, SVG interaction feedback, and gallery/lightbox polish. Supporting copy, ingredient descriptions, prices and contact choices remain at full opacity during motion. Booking targets remain stationary when hovered or pressed. The brand, layout, typography, palette, routes, menu content, concept disclosures and creator configuration are preserved.
+
+| Check | Result |
+|---|---|
+| ESLint / strict TypeScript / production build | Passed |
+| Existing site and creator browser suite | 23 passed, including the fourteen full-page axe scans |
+| Motion matrix | 55 passed across five browser profiles |
+| Motion interaction recheck after refinements | 25 passed across five browser profiles |
+| SVG regression matrix | 50 passed across five browser profiles |
+| Preserved-layout comparison | 42 route-width states; all positions, dimensions, fonts and colors unchanged |
+
+The matrix covers 375, 390, 430, 768, 1024 and 1440 CSS pixels in Windows Chrome and Edge, desktop WebKit, iPhone-profile WebKit and Android-profile Chrome. Checks include layout stability, overflow, console errors, route navigation, gallery changes, keyboard focus, operating-system reduced-motion changes, JavaScript-free content and contact links. The accessibility audit runs with normal motion enabled; text remains readable throughout the entrances. Screenshots were inspected after images loaded and motion settled.
+
+See [MOTION-POLISH.md](MOTION-POLISH.md) for the audit, reusable primitives, timings and performance decisions. Current captures and the comparison summary are in `artifacts/motion/`. Verification used local production browsers and device emulation; physical phones, native macOS Safari and Lighthouse scores were not measured.
+
 ## Creator/contact layer — 29 September 2026
 
 The EMBER footer now includes an independent concept label, Alson Chua's creator credit and worldwide freelance availability, four real contact links, and a Start a Project chooser. `config/creator.ts` is the single profile source. View Portfolio is absent while `portfolioUrl` is null; the configured state was verified by rendering the actual component with a test URL without modifying the real configuration.

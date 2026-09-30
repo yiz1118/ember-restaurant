@@ -1,0 +1,170 @@
+/* EMBER: a brief entrance, patient photographs, immediate controls. */
+:root {
+  --motion-ease: cubic-bezier(.22, .68, .2, 1);
+  --motion-control: 180ms;
+  --motion-text: 620ms;
+  --motion-image: 900ms;
+}
+
+@keyframes ember-arrive {
+  from { opacity: .65; transform: translateY(12px); }
+  to { opacity: 1; transform: none; }
+}
+@keyframes ember-photograph {
+  from { transform: scale(1.04); }
+  to { transform: scale(1); }
+}
+@keyframes ember-dissolve {
+  from { opacity: .65; }
+  to { opacity: 1; }
+}
+@keyframes ember-readable {
+  from { transform: translateY(8px); }
+  to { transform: none; }
+}
+
+.button .ui-icon,
+.header-book .ui-icon,
+.text-link .ui-icon,
+.preview-row .ui-icon,
+.creator-note a .ui-icon,
+.mobile-book-bar .ui-icon {
+  transition: transform var(--motion-control) var(--motion-ease);
+}
+.preview-row strong { transition: transform var(--motion-control) var(--motion-ease); }
+.filter-button,
+.time-option,
+.reservation-step {
+  transition: background-color var(--motion-control), color var(--motion-control), border-color var(--motion-control);
+}
+.lightbox-close,
+.lightbox-bottom button { transition: background-color var(--motion-control), color var(--motion-control); }
+.button:hover,
+.button:active,
+.header-book:active { transform: none; }
+.button:active .ui-icon,
+.header-book:active .ui-icon { transform: translate(1px, -1px); }
+.gallery-tile:active img { transform: scale(1.015); }
+
+.menu-toggle-symbol { position: relative; display: block; width: 22px; height: 22px; }
+.menu-toggle-symbol .ui-icon {
+  position: absolute;
+  inset: 0;
+  transition: opacity var(--motion-control), transform var(--motion-control) var(--motion-ease);
+}
+.menu-toggle-symbol .ui-icon:last-child { opacity: 0; transform: rotate(-45deg) scale(.85); }
+.menu-toggle[aria-expanded="true"] .ui-icon:first-child { opacity: 0; transform: rotate(45deg) scale(.85); }
+.menu-toggle[aria-expanded="true"] .ui-icon:last-child { opacity: 1; transform: none; }
+
+@media (min-width: 851px) {
+  .nav-link { position: relative; }
+  .nav-link::after {
+    content: "";
+    position: absolute;
+    inset: auto 0 -5px;
+    height: 1px;
+    background: currentColor;
+    transform: scaleX(0);
+    transform-origin: left;
+    transition: transform var(--motion-control) var(--motion-ease);
+  }
+  .nav-link.is-active::after,
+  .nav-link:focus-visible::after { transform: scaleX(1); }
+}
+
+@media (max-width: 850px) {
+  .nav-links {
+    display: flex;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-8px);
+    pointer-events: none;
+    transition: opacity 200ms, transform 200ms var(--motion-ease), visibility 0s 200ms;
+  }
+  .nav-links.is-open {
+    visibility: visible;
+    opacity: 1;
+    transform: none;
+    pointer-events: auto;
+    transition-delay: 0s;
+  }
+}
+
+@media (hover: hover) and (pointer: fine) {
+  .button:hover .ui-icon,
+  .header-book:hover .ui-icon,
+  .text-link:hover .ui-icon,
+  .preview-row:hover .ui-icon,
+  .creator-note a:hover .ui-icon { transform: translate(2px, -2px); }
+  .preview-row:hover strong { transform: translateX(4px); }
+  .nav-link:hover::after { transform: scaleX(1); }
+  .lightbox-bottom button:hover { background: var(--cream); color: var(--ink); }
+}
+.text-link:focus-visible .ui-icon,
+.creator-note a:focus-visible .ui-icon { transform: translate(2px, -2px); }
+
+@media (prefers-reduced-motion: no-preference) {
+  /* The primary CTA remains visible and usable throughout this entrance. */
+  .hero-kicker { animation: ember-readable 500ms var(--motion-ease) backwards; }
+  .hero h1 { animation: ember-arrive 680ms var(--motion-ease) 60ms backwards; }
+  .hero-content > p:not(.hero-kicker) { animation: ember-readable 580ms var(--motion-ease) 120ms backwards; }
+  .hero-content > .button { animation: ember-arrive 580ms var(--motion-ease) 180ms backwards; }
+  .hero-image { animation: ember-photograph 1000ms var(--motion-ease); }
+  .page-intro > .eyebrow { animation: ember-readable 450ms var(--motion-ease) backwards; }
+  .page-intro .display-title { animation: ember-arrive 620ms var(--motion-ease) 60ms backwards; }
+  .page-intro .lead-copy { animation: ember-readable 500ms var(--motion-ease) 140ms backwards; }
+
+  [data-reveal="text"].will-reveal {
+    opacity: .65;
+    transform: translateY(18px);
+    transition: opacity var(--motion-text) var(--motion-ease), transform var(--motion-text) var(--motion-ease);
+  }
+  [data-reveal="text"].will-reveal.is-visible { opacity: 1; transform: none; }
+
+  [data-reveal="image"].will-reveal img {
+    opacity: .6;
+    transform: scale(1.04);
+    transition: opacity 650ms var(--motion-ease), transform var(--motion-image) var(--motion-ease);
+  }
+  [data-reveal="image"].will-reveal.is-visible img { opacity: 1; transform: scale(1); }
+
+  [data-reveal="stagger"].will-reveal > * {
+    transform: translateY(12px);
+    transition: transform 550ms var(--motion-ease);
+  }
+  [data-reveal="stagger"].will-reveal > :nth-child(2) { transition-delay: 60ms; }
+  [data-reveal="stagger"].will-reveal > :nth-child(3) { transition-delay: 120ms; }
+  [data-reveal="stagger"].will-reveal > :nth-child(n+4) { transition-delay: 180ms; }
+  [data-reveal="stagger"].will-reveal.is-visible > * { transform: none; }
+  .gallery-grid[data-reveal].will-reveal > * { transition-duration: 320ms; }
+  .gallery-grid[data-reveal].will-reveal > * img { opacity: .65; transition: opacity 320ms var(--motion-ease), transform 650ms var(--motion-ease); }
+  .gallery-grid[data-reveal].will-reveal.is-visible > * img { opacity: 1; }
+
+  .lightbox-backdrop { animation: ember-dissolve 180ms ease-out; }
+  .lightbox-panel { animation: ember-readable 260ms var(--motion-ease); }
+  .lightbox-panel > img { animation: ember-dissolve 220ms ease-out; }
+  .creator-contact[open] .creator-contact-options { animation: ember-readable 180ms ease-out; }
+}
+
+@media (prefers-reduced-motion: no-preference) and (max-width: 700px) {
+  :root { --motion-text: 480ms; --motion-image: 700ms; }
+  [data-reveal="text"].will-reveal { transform: translateY(12px); }
+  [data-reveal="image"].will-reveal img { transform: scale(1.025); }
+  [data-reveal="stagger"].will-reveal > :nth-child(n+3) { transition-delay: 100ms; }
+  .hero-image { animation-duration: 800ms; }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after { animation: none !important; transition: none !important; }
+  [data-reveal].will-reveal,
+  [data-reveal].will-reveal > *,
+  [data-reveal="image"].will-reveal img { opacity: 1; transform: none; }
+  .image-frame:hover img,
+  .gallery-tile:hover img,
+  .gallery-tile:active img,
+  .button:hover,
+  .button:active,
+  .header-book:active,
+  .preview-row:hover strong,
+  a .ui-icon { transform: none !important; }
+}

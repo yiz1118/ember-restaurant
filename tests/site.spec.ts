@@ -118,12 +118,14 @@ test("reservation rules use Singapore dates and reject Mondays and expired arriv
 test("reduced-motion preference removes reveal animation", async ({ page }) => {
   await page.emulateMedia({ reducedMotion: "reduce" });
   await page.goto("/");
-  await expect(page.locator(".signature-feature")).not.toHaveClass(/will-reveal/);
+  await expect(page.locator(".signature-feature .image-frame")).not.toHaveClass(/will-reveal/);
   const duration = await page.locator(".signature-feature .image-frame img").evaluate(element => parseFloat(getComputedStyle(element).transitionDuration));
   expect(duration).toBeLessThan(0.01);
 });
 
 test("representative pages pass automated accessibility checks", async ({ page }) => {
+  // Fourteen complete axe scans need their own budget on a busy Windows host.
+  test.setTimeout(90000);
   const violations: string[] = [];
   for (const width of [390, 1440]) {
     await page.setViewportSize({ width, height: 900 });
@@ -146,7 +148,7 @@ test("save portfolio presentation screenshots", async ({ page }) => {
     await expect.poll(() => image.evaluate((element: HTMLImageElement) => element.naturalWidth)).toBeGreaterThan(0);
   }
   await page.locator("#signature").scrollIntoViewIfNeeded();
-  await expect(page.locator(".signature-feature")).toHaveClass(/is-visible/);
+  await expect(page.locator(".signature-feature .image-frame")).toHaveClass(/is-visible/);
   await page.locator("#signature").screenshot({ path: "artifacts/screenshots/signature-food-desktop.png" });
   await page.goto("/menu");
   await page.screenshot({ path: "artifacts/screenshots/menu-intro-desktop.png" });
